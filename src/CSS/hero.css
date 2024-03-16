@@ -1,0 +1,133 @@
+.hero-section {
+  width: 60%;
+  margin: 100px auto;
+  /* border: 2px solid red; */
+  /* margin-top: 200px; */
+}
+
+.contents {
+}
+
+.hero-content {
+  /* border: 5px solid green; */
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+}
+
+.intro {
+  /* border: 10px solid black; */
+  padding: 10px;
+  /* padding: 50px 50px 50px 0px; */
+}
+.intro span {
+  display: block;
+}
+.wrap-tech {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.line {
+  width: 100px;
+  height: 3px;
+  background-color: black;
+}
+
+.tech-stack {
+  padding: 10px;
+  margin: 10px;
+  font-size: 2rem;
+  opacity: 0.8;
+}
+.intro .primary-font {
+  font-size: 5rem;
+  padding: 5px;
+  margin: 5px;
+}
+
+.intro .description {
+  font-size: 1.7rem;
+  padding: 5px;
+  margin: 5px;
+  opacity: 0.5;
+}
+.primary-btn {
+  background-color: black;
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  margin: 50px 5px;
+  padding: 20px;
+}
+.images {
+  /* width: 200px; */
+  /* border: 1px solid red; */
+}
+
+.images img {
+  width: 100%;
+}
+
+.primary-font {
+  /* color: #ff4500; */
+  color: hsl(30, 100%, 60%);
+}
+
+.sticky-icons div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sticky-icons span:hover {
+  border: 2px solid blueviolet;
+}
+.sticky-icons {
+  position: fixed;
+  left: 70px;
+  top: 55vh;
+  /* background-color: black; */
+}
+/* .primary-font {
+  font-size: 40px;
+  font-weight: 5px;
+  margin: 5px;
+  padding: 10px;
+  
+} */
+/* .description {
+  margin: 5px;
+  padding: 10px;
+  font-size: 20px;
+} */
+
+/* .primary-btn {
+  margin: 5px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+} */
+
+.progress-bar {
+  background-color: #ff4500;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.circle-container {
+  position: fixed;
+  bottom: 50px;
+  right: 0px;
+  /* background-color: red; */
+}
+
+.circle-canvas {
+  cursor: pointer;
+  /* transition : 0.5s cubic-bezier(0.075,0.82,0.165,1);  */
+}

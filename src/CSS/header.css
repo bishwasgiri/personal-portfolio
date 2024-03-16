@@ -1,0 +1,45 @@
+.app {
+  position: relative;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh;
+  padding: 50px 100px 50px 100px;
+  width: 100%;
+  margin: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.lists ul {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.lists ul li a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.lists ul li {
+  list-style: none;
+  margin: 10px;
+  padding: 10px;
+}
+
+.login {
+  /* border: 1px solid black; */
+  border-radius: 8px;
+  background-color: black;
+}
+
+.login a:link {
+  color: white;
+}
+
+.name p {
+  font-size: 20px;
+}
