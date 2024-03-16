@@ -8,7 +8,7 @@ const storage = getStorage(app);
 const About = () => {
   const handleDownload = async () => {
     try {
-      const fileRef = ref(storage, "CV/workout.pdf");
+      const fileRef = ref(storage, "CV/myCv.pdf");
       const url = await getDownloadURL(fileRef);
 
       // Create a new tab
@@ -20,7 +20,7 @@ const About = () => {
       // Create a temporary anchor element
       const link = document.createElement("a");
       link.href = url;
-      link.setAttribute("download", "workout.pdf");
+      link.setAttribute("download", "myCv.pdf");
       document.body.appendChild(link);
 
       // Trigger the download
