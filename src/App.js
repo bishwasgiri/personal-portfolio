@@ -5,15 +5,16 @@ import Project from "./Components/Project";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import { Element, Link } from "react-scroll";
+import { RxHamburgerMenu } from "react-icons/rx";
 import "./App.css";
-import "./CSS/header.css";
+import "./CSS/headers.css";
 
 function App() {
   return (
     <div className="App">
       <div className="header">
         <div className="name">
-          <p>Bishwas</p>
+          <h1 className="logo">Bishwas.</h1>
         </div>
         <Element name="home">
           <div className="lists">
@@ -63,6 +64,11 @@ function App() {
                 </Link>
               </li>
             </ul>
+          </div>
+          <div className="hamburger">
+            <div className="ham-menu">
+              <RxHamburgerMenu size={40} />
+            </div>
           </div>
         </Element>
       </div>

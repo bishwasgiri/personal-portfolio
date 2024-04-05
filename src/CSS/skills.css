@@ -17,7 +17,7 @@
 }
 .skills-heading {
   color: hsl(30, 100%, 60%);
-  font-size: 3rem;
+  font-size: 2.2rem;
 }
 
 .skills-content {
@@ -26,15 +26,10 @@
 }
 
 .skills-card {
-  /* border: 2px solid black; */
   display: flex;
   flex-direction: column;
-  /* justify-content: flex-start; */
   align-items: center;
   margin: 10px;
-  padding: 50px;
-
-  width: 600px;
   padding: 20px;
   border-radius: 10px;
   background-color: #fff;
@@ -46,11 +41,7 @@
   display: flex;
   padding: 4px;
 }
-/* .grouping {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-} */
+
 .secondary-name {
   padding: 4px;
 }
@@ -60,33 +51,26 @@
 }
 .front-desc {
   font-size: 1.5rem;
-  /* width: 500px; */
   padding: 20px;
   margin: 10px;
   border-radius: 10px;
-  /* background-color: #fff; */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
 }
 
 .first-group {
-  /* border: 2px solid red; */
   margin: 10px;
   padding: 10px;
+  /* border: 1px solid red; */
 }
 
 .second-group {
-  /* border: 2px solid red; */
   margin: 10px;
   padding: 10px;
 }
 .grouping {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 50px;
-  /* justify-content: space-around; */
-  /* flex-direction:row; */
-  /* border: 10px solid green; */
 }
 
 .primary-name {
@@ -103,5 +87,34 @@
   opacity: 0.7;
   font-size: 2.1rem;
   margin: 10px;
-  /* padding: 10px; */
+}
+
+@media screen and (max-width: 480px) {
+  .skills-container {
+    width: 90%;
+    margin: auto;
+  }
+  .skills-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grouping {
+    display: flex;
+    flex-direction: column;
+    items: center;
+  }
+
+  .skills-card h4 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1400px) {
+  .skills-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

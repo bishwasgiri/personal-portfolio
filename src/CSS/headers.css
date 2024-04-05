@@ -1,6 +1,9 @@
 .app {
   position: relative;
 }
+.logo {
+  opacity: 0.6;
+}
 
 .header {
   display: flex;
@@ -14,7 +17,6 @@
 }
 .lists ul {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -22,6 +24,13 @@
   text-decoration: none;
   color: black;
   cursor: pointer;
+  font-size: 1.5rem;
+  opacity: 0.6;
+}
+
+.lists ul li a:hover {
+  color: hsl(30, 100%, 60%);
+  opacity: 1;
 }
 
 .lists ul li {
@@ -31,7 +40,6 @@
 }
 
 .login {
-  /* border: 1px solid black; */
   border-radius: 8px;
   background-color: black;
 }
@@ -42,4 +50,27 @@
 
 .name p {
   font-size: 20px;
+}
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .name {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .lists {
+    display: none;
+  }
+  .header {
+    position: relative;
+  }
+  .hamburger {
+    position: absolute;
+    top: 50px;
+    right: 30px;
+  }
 }

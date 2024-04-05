@@ -1,28 +1,23 @@
 .hero-section {
   width: 60%;
   margin: 100px auto;
-  /* border: 2px solid red; */
-  /* margin-top: 200px; */
-}
-
-.contents {
 }
 
 .hero-content {
-  /* border: 5px solid green; */
   display: grid;
   grid-template-columns: 3fr 1fr;
   align-items: center;
+  /* border: 2px solid green; */
 }
 
 .intro {
-  /* border: 10px solid black; */
   padding: 10px;
-  /* padding: 50px 50px 50px 0px; */
 }
+
 .intro span {
   display: block;
 }
+
 .wrap-tech {
   padding: 10px;
   display: flex;
@@ -42,6 +37,7 @@
   font-size: 2rem;
   opacity: 0.8;
 }
+
 .intro .primary-font {
   font-size: 5rem;
   padding: 5px;
@@ -54,6 +50,7 @@
   margin: 5px;
   opacity: 0.5;
 }
+
 .primary-btn {
   background-color: black;
   color: white;
@@ -62,9 +59,9 @@
   margin: 50px 5px;
   padding: 20px;
 }
+
 .images {
-  /* width: 200px; */
-  /* border: 1px solid red; */
+  width: 300px;
 }
 
 .images img {
@@ -72,44 +69,20 @@
 }
 
 .primary-font {
-  /* color: #ff4500; */
   color: hsl(30, 100%, 60%);
 }
 
-.sticky-icons div {
+.sticky-icons .icons {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.sticky-icons span:hover {
-  border: 2px solid blueviolet;
-}
 .sticky-icons {
   position: fixed;
   left: 70px;
   top: 55vh;
-  /* background-color: black; */
 }
-/* .primary-font {
-  font-size: 40px;
-  font-weight: 5px;
-  margin: 5px;
-  padding: 10px;
-  
-} */
-/* .description {
-  margin: 5px;
-  padding: 10px;
-  font-size: 20px;
-} */
-
-/* .primary-btn {
-  margin: 5px;
-  padding: 10px;
-  background-color: black;
-  color: white;
-} */
 
 .progress-bar {
   background-color: #ff4500;
@@ -129,5 +102,55 @@
 
 .circle-canvas {
   cursor: pointer;
+  color: hsl(30, 100%, 60%);
   /* transition : 0.5s cubic-bezier(0.075,0.82,0.165,1);  */
+}
+
+@media screen and (max-width: 480px) {
+  .hero-content {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .sticky-icons {
+    position: fixed;
+    left: -15px;
+    top: 55vh;
+  }
+  .images {
+    display: none;
+  }
+
+  .circle-container {
+    position: fixed;
+    bottom: 180px;
+    right: -20px;
+  }
+
+  .hero-section {
+    width: 90%;
+    margin: 100px auto;
+  }
+  .description {
+    text-align: justify;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 900px) {
+  .about-container {
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .images {
+    display: none;
+  }
+  .circle-container {
+    position: fixed;
+    bottom: 180px;
+    right: -25px;
+  }
 }

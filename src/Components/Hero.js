@@ -3,7 +3,7 @@ import myImage from "../Images/image.jpg";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
-import "../CSS/hero.css";
+import "../CSS/heros.css";
 
 const Hero = () => {
   const [percentScrolled, setPercentScrolled] = useState(0);
@@ -74,10 +74,10 @@ const Hero = () => {
     <>
       <div
         className="sticky-icons"
-        style={{ display: percentScrolled > 85 ? "none" : "block" }}
+        style={{
+          display: percentScrolled > 85 ? "none" : "block",
+        }}
       >
-        {/* { percentScrolled > 85% ?:} */}
-
         <div className="icons">
           <FaLinkedin size={30} style={{ margin: "20px" }} />
         </div>
@@ -93,7 +93,6 @@ const Hero = () => {
         <div className="contents">
           <div className="hero-content">
             <div className="intro">
-              {/* <div className="left-container"> */}
               <span className="primary-font">Bishwas Giri</span>
               <div className="wrap-tech">
                 <span className="line"></span>
@@ -105,7 +104,6 @@ const Hero = () => {
                 passionate and dedicated to my work.
               </p>
               <button className="primary-btn">Get In Touch</button>
-              {/* </div> */}
             </div>
             <div className="images">
               <img src={myImage} alt="myphoto" />

@@ -1,6 +1,7 @@
-import "../CSS/project.css";
 import firstPhoto from "../Images/website.png";
 import secondPhoto from "../Images/project_two.jpg";
+import "../CSS/projects.css";
+
 const Project = () => {
   return (
     <div className="project-container">

@@ -1,5 +1,5 @@
-import "../CSS/skills.css";
 import { SlCheck } from "react-icons/sl";
+import "../CSS/skills.css";
 
 const Skills = () => {
   return (
