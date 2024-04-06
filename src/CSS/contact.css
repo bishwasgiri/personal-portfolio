@@ -110,10 +110,22 @@ button {
   padding: 10px;
   font-size: 1.2rem;
   opacity: 0.7;
+  cursor: pointer;
+}
+
+.actual-contact:hover {
+  color: hsl(30, 100%, 60%);
+  opacity: 1;
 }
 
 .btn {
   cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.send-touch {
+  margin-right: 5px;
 }
 
 @media screen and (max-width: 480px) {
@@ -151,11 +163,23 @@ button {
   }
   .contacts {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: stretch;
   }
   .contact {
     font-size: 0.8rem;
     opacity: 0.7;
+  }
+  .input-grp input {
+    width: 95%;
+  }
+  .input-grp textarea {
+    width: 95%;
+  }
+
+  form div:last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

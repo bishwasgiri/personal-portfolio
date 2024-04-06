@@ -1,11 +1,13 @@
 import { MdMarkEmailRead } from "react-icons/md";
 import { TbPhoneCall } from "react-icons/tb";
 import { FaLinkedin } from "react-icons/fa";
+import { forwardRef } from "react";
+import { CiLocationArrow1 } from "react-icons/ci";
 import "../CSS/contact.css";
 
-const Contact = () => {
+const Contact = forwardRef((props, ref) => {
   return (
-    <div className="contact-container">
+    <div className="contact-container" ref={ref}>
       <div className="contact-header">
         <div className="contact-heading">Contact</div>
       </div>
@@ -47,7 +49,8 @@ const Contact = () => {
                 </div>
                 <div className="input-grp">
                   <button className="btn" type="submit">
-                    Send Message
+                    <span className="touch">Send</span>
+                    <CiLocationArrow1 size={25} />
                   </button>
                 </div>
               </form>
@@ -57,6 +60,6 @@ const Contact = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Contact;

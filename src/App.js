@@ -6,10 +6,20 @@ import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import { Element, Link } from "react-scroll";
 import { RxHamburgerMenu } from "react-icons/rx";
+
+import { useRef } from "react";
 import "./App.css";
 import "./CSS/headers.css";
 
 function App() {
+  const scrollRef = useRef(null);
+
+  const scrollToContact = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="App">
       <div className="header">
@@ -83,7 +93,7 @@ function App() {
           </div>
         </Element>
       </div>
-      <Hero />
+      <Hero scrollToContact={scrollToContact} />
       <Element name="about">
         <About />
       </Element>
@@ -94,7 +104,7 @@ function App() {
         <Project />
       </Element>
       <Element name="contact">
-        <Contact />
+        <Contact ref={scrollRef} />
       </Element>
       <Footer />
     </div>

@@ -59,10 +59,17 @@
   border-radius: 5px;
   margin: 50px 5px;
   padding: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.touch {
+  margin-right: 5px;
+}
 .images {
-  width: 300px;
+  /* width: 300px; */
 }
 
 .images img {

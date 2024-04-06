@@ -3,10 +3,15 @@ import myImage from "../Images/image.jpg";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import { CiLocationArrow1 } from "react-icons/ci";
 import "../CSS/heros.css";
 
-const Hero = () => {
+const Hero = ({ scrollToContact }) => {
   const [percentScrolled, setPercentScrolled] = useState(0);
+
+  const scrollToPostion = () => {
+    scrollToContact();
+  };
 
   const fillScrollLine = () => {
     const windowHeight = window.innerHeight;
@@ -103,7 +108,10 @@ const Hero = () => {
                 I am a technology enthusiast currently in nepal. I am very
                 passionate and dedicated to my work.
               </p>
-              <button className="primary-btn">Get In Touch</button>
+              <button className="primary-btn" onClick={scrollToPostion}>
+                <span className="touch">Get in Touch</span>
+                <CiLocationArrow1 size={25} />
+              </button>
             </div>
             <div className="images">
               <img src={myImage} alt="myphoto" />
