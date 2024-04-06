@@ -1,7 +1,9 @@
 import { getStorage } from "firebase/storage";
 import { app } from "../Config/fireBaseConfig";
 import { ref, getDownloadURL } from "firebase/storage";
+import { GoDownload } from "react-icons/go";
 import myImage from "../Images/image.jpg";
+
 import "../CSS/about.css";
 const storage = getStorage(app);
 
@@ -24,7 +26,7 @@ const About = () => {
       document.body.appendChild(link);
 
       // Trigger the download
-      link.click();
+      // link.click();
 
       // Clean up
       document.body.removeChild(link);
@@ -48,7 +50,7 @@ const About = () => {
             development are MongoDb,Express.js,Node.js and React.
           </p>
           <button onClick={handleDownload} className="btn">
-            Download CV
+            <span className="download">Download CV</span> <GoDownload />
           </button>
         </div>
       </div>
