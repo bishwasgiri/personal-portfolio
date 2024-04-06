@@ -52,7 +52,7 @@ const Hero = () => {
 
       // Draw the text showing the percentage scrolled
       ctx.fillStyle = "#000";
-      ctx.font = "10px Arial";
+      ctx.font = "bold 10px Arial";
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
       if (percentScrolled > 98) {

@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="blog-container">
       <footer>
-        <h2>Bishwas</h2>
+        <span>Bishwas</span>
         <div className="link-container">
           <FaInstagram size={50} style={{ margin: "30px" }} />
           <FaLinkedin size={50} style={{ margin: "30px" }} />

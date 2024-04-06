@@ -14,7 +14,7 @@ const Project = () => {
             <img src={firstPhoto} alt="project-img" />
           </div>
           <div className="about-proj">
-            <h2 className="tech-head">Personal Portfolio</h2>
+            <span className="tech-head">Personal Portfolio</span>
             <p className="project-desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
               iusto rem placeat? Placeat consequuntur, soluta ad modi nulla
@@ -31,7 +31,7 @@ const Project = () => {
         </div>
         <div className="project-two">
           <div className="about-proj">
-            <h2 className="tech-head">College Website</h2>
+            <span className="tech-head">College Website</span>
             <p className="project-desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
               iusto rem placeat? Placeat consequuntur, soluta ad modi nulla
@@ -54,7 +54,7 @@ const Project = () => {
             <img src={secondPhoto} alt="project-img" />
           </div>
           <div className="about-proj">
-            <h2 className="tech-head">E-Commerce Website</h2>
+            <span className="tech-head">E-Commerce Website</span>
             <p className="project-desc">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
               iusto rem placeat? Placeat consequuntur, soluta ad modi nulla

@@ -42,10 +42,10 @@ const About = () => {
           <img src={myImage} alt="my" />
         </div>
         <div className="about-contents">
-          <h3 className="content-header">Introduction</h3>
+          <span className="content-header">Introduction</span>
           <p className="intro-content">
             I am a Full Stack Developer. Technologies I used for full stack
-            development is MongoDb,Node.js and React.
+            development are MongoDb,Express.js,Node.js and React.
           </p>
           <button onClick={handleDownload} className="btn">
             Download CV

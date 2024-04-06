@@ -1,13 +1,14 @@
 .hero-section {
   width: 60%;
-  margin: 100px auto;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .hero-content {
   display: grid;
   grid-template-columns: 3fr 1fr;
   align-items: center;
-  /* border: 2px solid green; */
 }
 
 .intro {
@@ -39,7 +40,7 @@
 }
 
 .intro .primary-font {
-  font-size: 5rem;
+  font-size: 4rem;
   padding: 5px;
   margin: 5px;
 }
@@ -81,7 +82,7 @@
 .sticky-icons {
   position: fixed;
   left: 70px;
-  top: 55vh;
+  top: 40vh;
 }
 
 .progress-bar {
@@ -97,13 +98,11 @@
   position: fixed;
   bottom: 50px;
   right: 0px;
-  /* background-color: red; */
 }
 
 .circle-canvas {
   cursor: pointer;
   color: hsl(30, 100%, 60%);
-  /* transition : 0.5s cubic-bezier(0.075,0.82,0.165,1);  */
 }
 
 @media screen and (max-width: 480px) {

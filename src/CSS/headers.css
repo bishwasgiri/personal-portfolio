@@ -2,7 +2,8 @@
   position: relative;
 }
 .logo {
-  opacity: 0.6;
+  opacity: 0.8;
+  font-size: 2.3rem;
 }
 
 .header {
@@ -24,8 +25,8 @@
   text-decoration: none;
   color: black;
   cursor: pointer;
-  font-size: 1.5rem;
-  opacity: 0.6;
+  font-size: 2rem;
+  opacity: 0.7;
 }
 
 .lists ul li a:hover {
@@ -72,5 +73,8 @@
     position: absolute;
     top: 50px;
     right: 30px;
+  }
+  .lists ul li a {
+    /* font-size: 1rem; */
   }
 }

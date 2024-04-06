@@ -9,7 +9,7 @@ const Skills = () => {
       </div>
       <div className="skills-content">
         <div className="skills-card">
-          <h4>Frontend Technologies</h4>
+          <span className="skills-head">Frontend Technologies</span>
           <div className="grouping">
             <div className="first-group">
               <div className="front-desc">
@@ -54,7 +54,7 @@ const Skills = () => {
           </div>
         </div>
         <div className="skills-card">
-          <h4>Backend Technologies</h4>
+          <span className="skills-head">Backend Technologies</span>
           <div className="grouping">
             <div className="first-group">
               <div className="front-desc">

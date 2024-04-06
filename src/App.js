@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <div className="header">
         <div className="name">
-          <h1 className="logo">Bishwas.</h1>
+          <span className="logo">Bishwas.</span>
         </div>
         <Element name="home">
           <div className="lists">
@@ -61,6 +61,17 @@ function App() {
                   duration={500}
                 >
                   Project
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={-10}
+                  duration={500}
+                >
+                  Contact
                 </Link>
               </li>
             </ul>
