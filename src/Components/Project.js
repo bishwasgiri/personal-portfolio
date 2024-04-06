@@ -1,5 +1,7 @@
-import firstPhoto from "../Images/website.png";
-import secondPhoto from "../Images/project_two.jpg";
+import firstPhoto from "../Images/portfolio.png";
+import secondPhoto from "../Images/college.png";
+import thirdPhoto from "../Images/project_two.jpg";
+
 import "../CSS/projects.css";
 
 const Project = () => {
@@ -51,7 +53,7 @@ const Project = () => {
         </div>
         <div className="project-three">
           <div className="img-container">
-            <img src={secondPhoto} alt="project-img" />
+            <img src={thirdPhoto} alt="project-img" />
           </div>
           <div className="about-proj">
             <span className="tech-head">E-Commerce Website</span>
