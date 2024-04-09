@@ -18,10 +18,9 @@ const Project = () => {
           <div className="about-proj">
             <span className="tech-head">Personal Portfolio</span>
             <p className="project-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-              iusto rem placeat? Placeat consequuntur, soluta ad modi nulla
-              optio aut architecto similique exercitationem eveniet nostrum
-              officia ipsa voluptatibus dolorum accusantium?
+              This is my personal portfolio website which is developed using
+              technologies like html,css and React. Here I have enlisted all my
+              skills and project that I have been developing.
             </p>
             <div className="tech-used">
               <p className="technologies">HTML</p>
@@ -35,10 +34,9 @@ const Project = () => {
           <div className="about-proj">
             <span className="tech-head">College Website</span>
             <p className="project-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-              iusto rem placeat? Placeat consequuntur, soluta ad modi nulla
-              optio aut architecto similique exercitationem eveniet nostrum
-              officia ipsa voluptatibus dolorum accusantium?
+              This is a full stack college website with features such as admin
+              panel.It has been developed using technologies like MongoDb,
+              Express.js, React and Node.js
             </p>
             <div className="tech-used">
               <p className="technologies">React</p>
@@ -58,10 +56,8 @@ const Project = () => {
           <div className="about-proj">
             <span className="tech-head">E-Commerce Website</span>
             <p className="project-desc">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-              iusto rem placeat? Placeat consequuntur, soluta ad modi nulla
-              optio aut architecto similique exercitationem eveniet nostrum
-              officia ipsa voluptatibus dolorum accusantium?
+              This is a Full stack e-commerce website which i will be building
+              in the future
             </p>
             <div className="tech-used">
               <p className="technologies">React</p>

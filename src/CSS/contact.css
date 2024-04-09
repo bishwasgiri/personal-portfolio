@@ -129,8 +129,6 @@ button {
 }
 
 .message {
-  /* margin-right: 20px; */
-  /* padding: 20px; */
   color: red;
   text-transform: uppercase;
   display: flex;

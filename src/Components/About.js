@@ -25,9 +25,6 @@ const About = () => {
       link.setAttribute("download", "myCv.pdf");
       document.body.appendChild(link);
 
-      // Trigger the download
-      // link.click();
-
       // Clean up
       document.body.removeChild(link);
     } catch (error) {
@@ -46,8 +43,9 @@ const About = () => {
         <div className="about-contents">
           <span className="content-header">Introduction</span>
           <p className="intro-content">
-            I am a Full Stack Developer. Technologies I used for full stack
-            development are MongoDb,Express.js,Node.js and React.
+            I am a Full Stack Developer who is passionate about creating robust
+            web application with a solid foundation in modern technologies. I
+            specialize in MongoDb,Express.js,Node.js and React
           </p>
           <button onClick={handleDownload} className="btn">
             <span className="download">Download CV</span> <GoDownload />

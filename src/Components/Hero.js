@@ -106,7 +106,7 @@ const Hero = ({ scrollToContact }) => {
                 <span className="tech-stack">Full Stack Developer(MERN)</span>
               </div>
               <p className="description">
-                I am a technology enthusiast currently in nepal. I am very
+                I am a technology enthusiast currently in Nepal. I am very
                 passionate and dedicated to my work.
               </p>
               <button className="primary-btn" onClick={scrollToPostion}>
