@@ -11,8 +11,9 @@ const Contact = forwardRef((props, ref) => {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-  const [error, setError] = useState("");
+  const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [isDisappear, setIsDisappear] = useState(false);
 
   const handleEmail = (e) => {
     setEmail(e.target.value);
@@ -48,11 +49,18 @@ const Contact = forwardRef((props, ref) => {
       setEmail("");
       setSubject("");
       setMessage("");
+      // hide the error message after 2 seconds
+      setTimeout(() => {
+        setIsDisappear(true);
+      }, 3000);
     }
     if (!response.ok) {
       const value = json.error;
       setError(value);
       setIsLoading(false);
+      setTimeout(() => {
+        setError("");
+      }, 2000);
     }
   };
   return (

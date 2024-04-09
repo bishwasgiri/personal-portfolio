@@ -136,9 +136,6 @@ button {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  animation-name: fade-in;
-  animation-duration: 500ms;
-  animation-timing-function: ease-in-out;
 }
 
 @media screen and (max-width: 480px) {
@@ -198,12 +195,23 @@ button {
 }
 
 @keyframes fade-in {
-  from {
+  0% {
     opacity: 0;
     transform: translateY(20px);
   }
-  to {
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
+/* @keyframes fade-out {
+  from {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+} */
