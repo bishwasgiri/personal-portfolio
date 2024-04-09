@@ -14,19 +14,17 @@ const Skills = () => {
             <div className="first-group">
               <div className="front-desc">
                 <div className="group-name">
-                  {/* <p> */}
                   <SlCheck />
-                  {/* </p> */}
-                  <p className="primary-name">HTML</p>
+
+                  <p className="primary-name">html</p>
                 </div>
                 <p className="secondary-name">Intermediate</p>
               </div>
               <div className="front-desc">
                 <div className="group-name">
-                  {/* <p> */}
                   <SlCheck />
-                  {/* </p> */}
-                  <p className="primary-name">CSS</p>
+
+                  <p className="primary-name">css</p>
                 </div>
                 <p className="secondary-name">Intermediate</p>
               </div>
@@ -34,19 +32,17 @@ const Skills = () => {
             <div className="second-group">
               <div className="front-desc">
                 <div className="group-name">
-                  {/* <p> */}
                   <SlCheck />
-                  {/* </p> */}
+
                   <p className="primary-name">Javascript</p>
                 </div>
                 <p className="secondary-name">Intermediate</p>
               </div>
               <div className="front-desc">
                 <div className="group-name">
-                  {/* <p> */}
                   <SlCheck />
-                  {/* </p> */}
-                  <p className="primary-name">Git</p>
+
+                  <p className="primary-name">git</p>
                 </div>
                 <p className="secondary-name">Basic</p>
               </div>

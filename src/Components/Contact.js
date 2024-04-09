@@ -13,7 +13,7 @@ const Contact = forwardRef((props, ref) => {
   const [message, setMessage] = useState("");
   const [error, setError] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-  const [isDisappear, setIsDisappear] = useState(false);
+  // const [isDisappear, setIsDisappear] = useState(false);
 
   const handleEmail = (e) => {
     setEmail(e.target.value);
@@ -50,9 +50,10 @@ const Contact = forwardRef((props, ref) => {
       setSubject("");
       setMessage("");
       // hide the error message after 2 seconds
+
       setTimeout(() => {
-        setIsDisappear(true);
-      }, 3000);
+        setError("");
+      }, 2000);
     }
     if (!response.ok) {
       const value = json.error;
